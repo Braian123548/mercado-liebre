@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
@@ -19,34 +20,38 @@
             <input type="text" name="q" placeholder="Buscar productos, marcas">
             <button type="submit" class="submit-button"><i class="fas fa-search"></i></button>
         </form>
-        <p class="parrafo-cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav class="home-header-nav">
-            <ul>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Creá tu cuenta <i class="fas fa-user-alt" style="color: black;"></i></a></li>
-                <li><a href="">Ingresá <i class="fas fa-sign-in-alt" style="color: black;"></i></a></li>
-                <li><a href="">Mis compras <i class="fas fa-shopping-bag" style="color: black;"></i></a></li>
-            </ul>
-        </nav>
+
+        <div class="contenedor-p-nav">
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+            </p>
+            <nav id="home-header-nav">
+                <ul>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Creá tu cuenta <i class="fas fa-user-alt" style="color: black;"></i></a></li>
+                    <li><a href="">Ingresá <i class="fas fa-sign-in-alt" style="color: black;"></i></a></li>
+                    <li><a href="">Mis compras <i class="fas fa-shopping-bag" style="color: black;"></i></a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="home-header-boton">
-            <i class="fas fa-bars" style="color: #ffffff;"></i>
+            <button class="boton-nav" onclick="ocultarNav()"><i class="fas fa-bars"
+                    style="color: #ffffff;"></i></button>
         </div>
 
     </header>
-
-
 
     <main class="home-main">
         <h3>Basado en tu última visita</h3>
 
         <div>
             <img height="300" src="images/img-cafetera-moulinex.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$6.770</p>
             <h5>40% OFF</h5>
             <h4>Cafetera Moulinex</h4>
@@ -54,6 +59,7 @@
 
         <div>
             <img height="300" src="images/img-macbook-pro-2019.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$230.000</p>
             <h5>20% OFF</h5>
             <h4>MacBook Pro 2019</h4>
@@ -61,6 +67,7 @@
 
         <div>
             <img height="300" src="images/img-samsung-galaxy-s10.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$70.500</p>
             <h5>10% OFF</h5>
             <h4>Samsung Galaxy S10</h4>
@@ -68,6 +75,7 @@
 
         <div>
             <img height="300" src="images/img-tv-samsung-smart.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$23.200</p>
             <h5>5% OFF</h5>
             <h4>SmartTv Samsung 43"</h4>
@@ -77,6 +85,7 @@
 
         <div>
             <img height="300" src="images/img-cafetera-moulinex.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$6.770</p>
             <h5>40% OFF</h5>
             <h4>Cafetera Moulinex</h4>
@@ -84,6 +93,7 @@
 
         <div>
             <img height="300" src="images/img-macbook-pro-2019.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$230.000</p>
             <h5>20% OFF</h5>
             <h4>MacBook Pro 2019</h4>
@@ -91,6 +101,7 @@
 
         <div>
             <img height="300" src="images/img-samsung-galaxy-s10.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$70.500</p>
             <h5>10% OFF</h5>
             <h4>Samsung Galaxy S10</h4>
@@ -98,13 +109,12 @@
 
         <div>
             <img height="300" src="images/img-tv-samsung-smart.jpg" alt="">
+            <i class="fas fa-truck" style="color: #009e3d;"></i>
             <p>$23.200</p>
             <h5>5% OFF</h5>
             <h4>SmartTv Samsung 43"</h4>
         </div>
     </main>
-
-
 
     <footer class="home-footer">
 
@@ -126,6 +136,8 @@
 
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
+
+    <script src="../js/funcionalidades.js"></script>
 </body>
 
 </html>
