@@ -216,6 +216,8 @@ a {
 .home-footer {
     text-align: center;
     margin-top: 4rem;
+    background-color: white;
+    padding: 2rem;
 }
 
 .home-footer i {
