@@ -79,6 +79,64 @@ a {
     width: 50%;
 }
 
+/*CARRUCEL*/
+
+.carousel-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 1 0 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+
+  }
+  
+  .carousel-navigation button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #bbb;
+    margin: 0 5px;
+  }
+  
+  .carousel-navigation button.active {
+    background-color: #333;
+  }
+
+
+
+
+
+
+
+
+
+
+
 /*MAIN*/
 
 .home-main {

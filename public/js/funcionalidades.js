@@ -1,3 +1,5 @@
+//Con esto controlo el nav en celulares
+
 let navAbierto = true;
 
 function ocultarNav() {
@@ -11,6 +13,7 @@ function ocultarNav() {
   }
 }
 
+//Este codigo es para que los h3 del main siempre esten encima del primer hijo del contenedor tarjeta 
 
 
 const contenedoresTarjeta = document.querySelectorAll('.contenedor-tarjeta');
@@ -33,3 +36,29 @@ window.addEventListener('DOMContentLoaded', actualizarPosicionH3);
 window.addEventListener('resize', actualizarPosicionH3);
 
 
+//CARRUCEL
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const carouselNavButtons = document.querySelectorAll('.carousel-navigation button');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  carouselNavButtons.forEach((button, index) => {
+    if (index === currentIndex) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+}
+
+carouselNavButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    currentIndex = index;
+    updateCarousel();
+  });
+});
