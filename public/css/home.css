@@ -5,10 +5,16 @@
     padding-bottom: 20px;
 }
 
+.buscador{
+    width: 50%;
+}
 
-#home-header-nav ul {
+.home-header-nav ul {
     list-style: none;
     padding-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 
 a {
@@ -18,15 +24,71 @@ a {
 
 .home-header {
     background-color: #EAC926;
-    padding: 2rem;
+    padding: 1rem;
 }
+
+.home-header-buscador {
+    position: relative;
+    display: inline-block;
+}
+
+.home-header-buscador input[type="text"] {
+    background-color: white;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.home-header-buscador input[type="text"]:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.home-header-buscador .submit-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.boton-nav {
+    background-color: #1259c3;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+.home-header-logo-buscador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.home-header-logo-buscador p {
+    margin-top: 1rem;
+}
+
+
+.home-header-logo-buscador img {
+    width: 50%;
+}
+
+/*MAIN*/
 
 .home-main {
     margin: 0 auto;
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-.home-main div i{
+.home-main div i {
     border: solid 3px green;
     padding: 15px 12px 15px 12px;
     border-radius: 25px;
@@ -34,6 +96,7 @@ a {
 
 .home-main h3 {
     font-size: 24px;
+    margin-top: 2rem;
 }
 
 .home-main h4 {
@@ -53,6 +116,44 @@ a {
 }
 
 
+.tarjeta {
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    position: relative;
+    background-color: white;
+}
+
+.tarjeta i {
+    display: block;
+    font-size: 16px;
+    background-color: #FFF;
+    position: absolute;
+    right: 26px;
+    bottom: 91px;
+}
+
+.tarjeta img {
+    width: 260px;
+}
+
+.tarjeta p {
+    border-top: solid 1px rgb(196, 196, 196);
+    padding-top: 1rem;
+    
+}
+
+.contenedor-tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /*FOOTER*/
 .home-footer {
     text-align: center;
@@ -68,55 +169,104 @@ a {
     color: #666;
 }
 
-.home-main div {
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-   
-}
-
-.home-main div img{
-    margin: 0 auto;
-    display: block;
-}
 
 .home-footer p {
     color: #666;
     font-size: 12px;
 }
 
-.boton-nav {
-    background-color: #1259c3;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border-radius: 0.2rem;
+.contenedor-p-nav {
+    margin-top: 2rem;
 }
 
 
-/*Tablets*/
 
-@media (width>=361px) and (width<768px) {
-    .home-main div {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
+@media (width>=500px) and (width<=746px) {
     .boton-nav {
         display: none;
     }
 
-   
-}
-
-/*Desktop*/
-
-@media (width>=769px) {
-    .home-main div {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .home-header-boton {
+        margin: 0rem;
     }
 
+    .home-header-nav ul {
+        list-style: none;
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-header-nav a {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .home-header-nav a {
+        font-size: 0.7rem;
+    }
+
+    .contenedor-p-nav {
+        margin-top: 4rem;
+    }
+
+    .home-header-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-header-nav ul li {
+        margin-left: 0.5rem;
+    }
+
+    .home-header-logo-buscador img {
+        width: 200px;
+    }
+
+    .home-header-nav{
+        display: flex;
+    }
+
+}
+
+
+
+
+@media (width>=746px) {
     .boton-nav {
         display: none;
     }
 
-  
+    .home-header-boton {
+        margin: 0rem;
+    }
+
+    .home-header-nav ul {
+        list-style: none;
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-header-nav {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .contenedor-p-nav {
+        margin-top: 4rem;
+    }
+
+
+
+    .home-header-nav ul li {
+        margin-left: 1rem;
+    }
+
+    .home-header-logo-buscador img {
+        width: 200px;
+    }
+
+
+
 }
